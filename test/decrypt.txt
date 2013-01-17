@@ -1,3 +1,0 @@
-This is an example file.
-
-This is some example content.
