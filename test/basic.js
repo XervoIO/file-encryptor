@@ -28,5 +28,3 @@ var decrypt = function(original, encrypted) {
 };
 
 encrypt('example.txt');
-encrypt('ModulusDemo.zip');
-encrypt('Tweetbot.0.8.1_1.zip');
