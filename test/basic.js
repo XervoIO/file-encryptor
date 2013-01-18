@@ -9,7 +9,7 @@ var encrypt = function(input) {
     path.join(__dirname, input),
     path.join(__dirname, input + '.data'),
     key,
-    function(err, result) {
+    function(err) {
       console.log(input + ' encryption complete.');
       decrypt(input, input + '.data');
     }
@@ -21,7 +21,7 @@ var decrypt = function(original, encrypted) {
     path.join(__dirname, encrypted),
     path.join(__dirname, 'decrypted.' + original),
     key,
-    function(err, result) {
+    function(err) {
       console.log(original + ' decryption complete.');
     }
   );
