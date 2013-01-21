@@ -49,7 +49,7 @@ Setting algorithm option:
 
     ...
 
-    encryptor.descryptFile('encrypted.dat', 'outputfile.txt', key, options, function(err) {
+    encryptor.decryptFile('encrypted.dat', 'outputfile.txt', key, options, function(err) {
       // Encryption complete;
     });
 
