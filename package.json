@@ -1,18 +1,17 @@
 {
-  "name" : "file-encryptor",
-  "version" : "0.1.0",
-  "description" : "Encrypts files using Node's built-in Cipher class.",
-  "homepage" : "https://github.com/onmodulus/file-encryptor",
-  "author" : "Modulus <support@modulus.io>",
-  "contributors" : {
-    "name" : "Brandon Cannaday",
-    "email" : "brandon@modulus.io"
+  "name": "file-encryptor",
+  "version": "0.1.1",
+  "description": "Encrypts files using Node's built-in Cipher class.",
+  "homepage": "https://github.com/onmodulus/file-encryptor",
+  "author": "Modulus <support@modulus.io>",
+  "contributors": {
+    "name": "Brandon Cannaday",
+    "email": "brandon@modulus.io"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/onmodulus/file-encryptor"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onmodulus/file-encryptor"
   },
-  "main" : "./lib/file-encryptor.js",
-  "dependencies" : {
-  }
+  "main": "./lib/file-encryptor.js",
+  "dependencies": {}
 }
