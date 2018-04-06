@@ -44,13 +44,12 @@ Setting algorithm option:
     var options = { algorithm: 'aes256' };
 
     encryptor.encryptFile('input_file.txt', 'encrypted.dat', key, options, function(err) {
-      // Decryption complete;
+      // Encryption complete;
     });
 
     ...
-
     encryptor.decryptFile('encrypted.dat', 'outputfile.txt', key, options, function(err) {
-      // Encryption complete;
+      // Decryption complete;
     });
 
 ## License
