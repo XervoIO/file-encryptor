@@ -12,17 +12,18 @@ Use it in your script:
 
     var encryptor = require('file-encryptor');
 
-    var key = 'My Super Secret Key';
+    var key = crypto.randomBytes(24);
+    var iv = crypto.randomBytes(16);
 
     // Encrypt file.
-    encryptor.encryptFile('input_file.txt', 'encrypted.dat', key, function(err) {
+    encryptor.encryptFile('input_file.txt', 'encrypted.dat', key, iv, function(err) {
       // Encryption complete.
     });
 
     ...
 
     // Decrypt file.
-    encryptor.decryptFile('encrypted.dat', 'output_file.txt', key, function(err) {
+    encryptor.decryptFile('encrypted.dat', 'output_file.txt', key, iv, function(err) {
       // Decryption complete.
     });
 
@@ -40,7 +41,9 @@ Available algorithms can be found by executing:
 
 Setting algorithm option:
 
-    var key = 'My Super Secret Key';
+    var key = crypto.randomBytes(32);
+    var iv = crypto.randomBytes(16);
+        
     var options = { algorithm: 'aes256' };
 
     encryptor.encryptFile('input_file.txt', 'encrypted.dat', key, options, function(err) {
